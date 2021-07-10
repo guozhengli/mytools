@@ -1,4 +1,4 @@
-package common_tools
+package mytools
 
 import (
 	"fmt"
@@ -31,6 +31,6 @@ func (s StrTo) MustUInt32() uint32 {
 	return v
 }
 
-func Hello(s string) string {
-	return fmt.Sprintf("你好！ %v\n", s)
+func Hello(s string, i int) string {
+	return fmt.Sprintf("你好！ %v hh %v\n", s, i)
 }
