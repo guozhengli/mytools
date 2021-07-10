@@ -31,6 +31,6 @@ func (s StrTo) MustUInt32() uint32 {
 	return v
 }
 
-func Hello(s string, i int) string {
-	return fmt.Sprintf("你好！ %v hh %v\n", s, i)
+func Hello(s string, i int) (string, error) {
+	return fmt.Sprintf("你好！ %v hh %v\n", s, i), nil
 }
